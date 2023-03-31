@@ -1,0 +1,140 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(7, 7, 42);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 1400px;
+  width: 360px;
+}
+
+@media screen and (min-width: 550px) {
+  .container {
+    height: 500px;
+    width: 920px;
+    flex-direction: row;
+  }
+}
+
+.card {
+  width: 307px;
+  height: 500px;
+  font-size: 32px;
+  background-color: #e28625;
+  padding: 48px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 550px) {
+  .card {
+    height: 500px;
+    width: 920px;
+  }
+}
+
+.card-medio {
+  background-color: #006971;
+}
+
+.card-oscuro {
+  background-color: #004140;
+}
+
+.circle {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  background-color: #e28625;
+  background-image: radial-gradient(
+    100px at 40px 50px,
+    #c87822 25%,
+    #e28625 25%
+  );
+}
+
+.circle-suv {
+  background-color: #e28625;
+  background-image: radial-gradient(
+    100px at 40px 50px,
+    #124b4f 25%,
+    #006971 25%
+  );
+}
+
+.circle-luxury {
+  background-color: #e28625;
+  background-image: radial-gradient(
+    100px at 40px 50px,
+    #003938 25%,
+    #004140 25%
+  );
+}
+
+.car {
+  position: relative;
+  top: 2.5rem;
+  left: 2.5rem;
+  z-index: 20;
+}
+
+.text {
+  font-size: 15px;
+  color: white;
+  margin-top: 25px;
+  line-height: 20px;
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-top: 90px;
+}
+
+.learn {
+  font-size: 12px;
+  color: black;
+  background-color: white;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 73px;
+  padding-top: 7px;
+}
+
+.learn:hover {
+  background-color: #ffe8b5;
+}
